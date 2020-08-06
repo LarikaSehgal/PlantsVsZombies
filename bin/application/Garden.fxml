@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="anch" prefHeight="300" prefWidth="500" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.GardenController">
+   <children>
+      <ImageView fitHeight="343.0" fitWidth="608.0" layoutX="-8.0" layoutY="-3.0">
+         <image>
+            <Image url="@Frontyard.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="gardenexit" blendMode="DARKEN" layoutX="538.0" layoutY="-2.0" mnemonicParsing="false" onAction="#gobacktomainmenu" prefHeight="27.0" prefWidth="39.0" />
+      <ImageView fx:id="lawnmover1" fitHeight="61.0" fitWidth="49.0" layoutX="104.0" layoutY="30.0">
+         <image>
+            <Image url="@lawnmover.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="lawnmover2" fitHeight="61.0" fitWidth="49.0" layoutX="104.0" layoutY="83.0">
+         <image>
+            <Image url="@lawnmover.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="lawnmover3" fitHeight="61.0" fitWidth="49.0" layoutX="104.0" layoutY="140.0" onDragDetected="#landmover">
+         <image>
+            <Image url="@lawnmover.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="lawnmover4" fitHeight="61.0" fitWidth="49.0" layoutX="104.0" layoutY="193.0">
+         <image>
+            <Image url="@lawnmover.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="lawnmover5" fitHeight="61.0" fitWidth="49.0" layoutX="104.0" layoutY="245.0">
+         <image>
+            <Image url="@lawnmover.png" />
+         </image>
+      </ImageView>
+      <Button blendMode="DARKEN" layoutX="100.0" layoutY="113.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="57.0" />
+      <Button blendMode="DARKEN" layoutX="109.0" layoutY="47.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="39.0" />
+      <Button blendMode="DARKEN" layoutX="100.0" layoutY="169.0" mnemonicParsing="false" onAction="#landmover" prefHeight="28.0" prefWidth="57.0" />
+      <Button blendMode="DARKEN" layoutX="100.0" layoutY="218.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="57.0" />
+      <Button blendMode="DARKEN" layoutX="100.0" layoutY="268.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="57.0" />
+      <Button blendMode="DARKEN" layoutX="528.0" layoutY="313.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="57.0" />
+      <ProgressBar fx:id="pb" layoutX="296.0" layoutY="2.0" prefWidth="200.0" progress="0.0" />
+      <Button fx:id="stb" blendMode="DARKEN" layoutX="157.0" layoutY="313.0" mnemonicParsing="false" onAction="#handleprogress" prefHeight="27.0" prefWidth="296.0" text="START GAME" />
+      <Button blendMode="DARKEN" layoutX="-8.0" layoutY="50.0" mnemonicParsing="false" onAction="#buypeashooter" prefHeight="49.0" prefWidth="66.0" text="Buy peashooter" />
+      <ImageView fitHeight="41.0" fitWidth="49.0" layoutY="47.0">
+         <image>
+            <Image url="@pea.png" />
+         </image>
+      </ImageView>
+      <Button blendMode="DARKEN" layoutX="-4.0" layoutY="103.0" mnemonicParsing="false" onAction="#buysunflower" prefHeight="49.0" prefWidth="57.0" text="buy sunflower" />
+      <ImageView fitHeight="49.0" fitWidth="49.0" layoutY="103.0">
+         <image>
+            <Image url="@sunflower.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="b00" layoutX="140.0" layoutY="40.0" mnemonicParsing="false" onAction="#plant" opacity="0.0" prefHeight="41.0" prefWidth="49.0" />
+      <Button fx:id="b12" layoutX="238.0" layoutY="90.0" mnemonicParsing="false" onAction="#plant" opacity="0.0" prefHeight="49.0" prefWidth="49.0" />
+      <Button fx:id="b01" layoutX="189.0" layoutY="40.0" mnemonicParsing="false" onAction="#plant" opacity="0.0" prefHeight="41.0" prefWidth="49.0" />
+      <Button fx:id="b02" layoutX="238.0" layoutY="32.0" mnemonicParsing="false" onAction="#plant" opacity="0.0" prefHeight="49.0" prefWidth="49.0" />
+      <Button fx:id="b03" layoutX="288.0" layoutY="32.0" mnemonicParsing="false" onAction="#plant" opacity="0.0" prefHeight="49.0" prefWidth="49.0" />
+      <Button fx:id="b04" layoutX="331.0" layoutY="32.0" mnemonicParsing="false" onAction="#plant" opacity="0.0" prefHeight="49.0" prefWidth="49.0" />
+      <Button fx:id="b05" layoutX="380.0" layoutY="26.0" mnemonicParsing="false" onAction="#plant" opacity="0.0" prefHeight="61.0" prefWidth="49.0" />
+      <Button fx:id="b06" layoutX="429.0" layoutY="28.0" mnemonicParsing="false" onAction="#plant" opacity="0.0" prefHeight="61.0" prefWidth="49.0" />
+      <Button fx:id="b07" layoutX="472.0" layoutY="32.0" mnemonicParsing="false" onAction="#plant" opacity="0.0" prefHeight="49.0" prefWidth="49.0" />
+      <Button fx:id="b08" layoutX="521.0" layoutY="34.0" mnemonicParsing="false" onAction="#plant" opacity="0.0" prefHeight="49.0" prefWidth="49.0" />
+      <Button fx:id="b10" layoutX="140.0" layoutY="83.0" mnemonicParsing="false" onAction="#plant" opacity="0.0" prefHeight="61.0" prefWidth="49.0" />
+      <Button fx:id="b44" layoutX="331.0" layoutY="251.0" mnemonicParsing="false" onAction="#plant" opacity="0.0" prefHeight="49.0" prefWidth="49.0" />
+      <Button fx:id="b13" layoutX="288.0" layoutY="83.0" mnemonicParsing="false" onAction="#plant" opacity="0.0" prefHeight="61.0" prefWidth="49.0" />
+      <Button fx:id="b14" layoutX="341.0" layoutY="91.0" mnemonicParsing="false" onAction="#plant" opacity="0.0" prefHeight="49.0" prefWidth="39.0" />
+      <Button fx:id="b15" layoutX="380.0" layoutY="91.0" mnemonicParsing="false" onAction="#plant" opacity="0.0" prefHeight="49.0" prefWidth="49.0" />
+      <Button fx:id="b16" layoutX="429.0" layoutY="91.0" mnemonicParsing="false" onAction="#plant" opacity="0.0" prefHeight="49.0" prefWidth="49.0" />
+      <Button fx:id="b17" layoutX="472.0" layoutY="92.0" mnemonicParsing="false" onAction="#plant" opacity="0.0" prefHeight="49.0" prefWidth="49.0" />
+      <Button fx:id="b18" layoutX="528.0" layoutY="93.0" mnemonicParsing="false" onAction="#plant" opacity="0.0" prefHeight="49.0" prefWidth="49.0" />
+      <Button fx:id="b11" layoutX="189.0" layoutY="87.0" mnemonicParsing="false" onAction="#plant" opacity="0.0" prefHeight="55.0" prefWidth="49.0" />
+      <Button fx:id="b43" layoutX="288.0" layoutY="251.0" mnemonicParsing="false" onAction="#plant" opacity="0.0" prefHeight="55.0" prefWidth="49.0" />
+      <Button fx:id="b33" layoutX="288.0" layoutY="203.0" mnemonicParsing="false" onAction="#plant" opacity="0.0" prefHeight="49.0" prefWidth="49.0" />
+      <Button fx:id="b23" layoutX="288.0" layoutY="141.0" mnemonicParsing="false" onAction="#plant" opacity="0.0" prefHeight="61.0" prefWidth="49.0" />
+      <Button fx:id="b24" layoutX="331.0" layoutY="139.0" mnemonicParsing="false" onAction="#plant" opacity="0.0" prefHeight="61.0" prefWidth="49.0" />
+      <Button fx:id="b45" layoutX="380.0" layoutY="248.0" mnemonicParsing="false" onAction="#plant" opacity="0.0" prefHeight="55.0" prefWidth="49.0" />
+      <Button fx:id="b35" layoutX="380.0" layoutY="200.0" mnemonicParsing="false" onAction="#plant" opacity="0.0" prefHeight="49.0" prefWidth="49.0" />
+      <Button fx:id="b25" layoutX="380.0" layoutY="141.0" mnemonicParsing="false" onAction="#plant" opacity="0.0" prefHeight="61.0" prefWidth="49.0" />
+      <Button fx:id="b46" layoutX="429.0" layoutY="248.0" mnemonicParsing="false" onAction="#plant" opacity="0.0" prefHeight="55.0" prefWidth="49.0" />
+      <Button fx:id="b36" layoutX="429.0" layoutY="195.0" mnemonicParsing="false" onAction="#plant" opacity="0.0" prefHeight="49.0" prefWidth="49.0" />
+      <Button fx:id="b26" layoutX="429.0" layoutY="140.0" mnemonicParsing="false" onAction="#plant" opacity="0.0" prefHeight="55.0" prefWidth="49.0" />
+      <Button fx:id="b47" layoutX="476.0" layoutY="248.0" mnemonicParsing="false" onAction="#plant" opacity="0.0" prefHeight="55.0" prefWidth="49.0" />
+      <Button fx:id="b37" layoutX="478.0" layoutY="199.0" mnemonicParsing="false" onAction="#plant" opacity="0.0" prefHeight="49.0" prefWidth="49.0" />
+      <Button fx:id="b27" layoutX="472.0" layoutY="141.0" mnemonicParsing="false" onAction="#plant" opacity="0.0" prefHeight="55.0" prefWidth="57.0" />
+      <Button fx:id="b48" layoutX="532.0" layoutY="241.0" mnemonicParsing="false" onAction="#plant" opacity="0.0" prefHeight="61.0" prefWidth="49.0" />
+      <Button fx:id="b38" layoutX="532.0" layoutY="200.0" mnemonicParsing="false" onAction="#plant" opacity="0.0" prefHeight="41.0" prefWidth="49.0" />
+      <Button fx:id="b28" layoutX="528.0" layoutY="148.0" mnemonicParsing="false" onAction="#plant" opacity="0.0" prefHeight="49.0" prefWidth="49.0" />
+      <Button fx:id="b22" layoutX="238.0" layoutY="141.0" mnemonicParsing="false" onAction="#plant" opacity="0.0" prefHeight="55.0" prefWidth="49.0" />
+      <Button fx:id="b21" layoutX="190.0" layoutY="141.0" mnemonicParsing="false" onAction="#plant" opacity="0.0" prefHeight="55.0" prefWidth="49.0" />
+      <Button fx:id="b20" layoutX="140.0" layoutY="142.0" mnemonicParsing="false" onAction="#plant" opacity="0.0" prefHeight="55.0" prefWidth="49.0" />
+      <Button fx:id="b32" layoutX="238.0" layoutY="198.0" mnemonicParsing="false" onAction="#plant" opacity="0.0" prefHeight="55.0" prefWidth="49.0" />
+      <Button fx:id="b31" layoutX="190.0" layoutY="198.0" mnemonicParsing="false" onAction="#plant" opacity="0.0" prefHeight="49.0" prefWidth="49.0" />
+      <Button fx:id="b30" layoutX="146.0" layoutY="198.0" mnemonicParsing="false" onAction="#plant" opacity="0.0" prefHeight="55.0" prefWidth="49.0" />
+      <Button fx:id="b42" layoutX="238.0" layoutY="248.0" mnemonicParsing="false" onAction="#plant" opacity="0.0" prefHeight="55.0" prefWidth="49.0" />
+      <Button fx:id="b41" layoutX="190.0" layoutY="248.0" mnemonicParsing="false" onAction="#plant" opacity="0.0" prefHeight="55.0" prefWidth="49.0" />
+      <Button fx:id="b40" layoutX="146.0" layoutY="248.0" mnemonicParsing="false" onAction="#plant" opacity="0.0" prefHeight="55.0" prefWidth="49.0" />
+      <Button fx:id="b34" layoutX="338.0" layoutY="201.0" mnemonicParsing="false" onAction="#plant" opacity="0.0" prefHeight="49.0" prefWidth="49.0" />
+      <ImageView fx:id="plant" fitHeight="80.0" fitWidth="78.0" layoutX="132.0" layoutY="214.0">
+         <image>
+            <Image url="@pea.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="zombie" fitHeight="120.0" fitWidth="105.0" layoutX="558.0" layoutY="181.0">
+         <image>
+            <Image url="@conezombie.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="pea" fitHeight="20.0" fitWidth="21.0" layoutX="200.0" layoutY="231.0">
+         <image>
+            <Image url="@pea1.png" />
+         </image>
+      </ImageView>
+      <Label blendMode="HARD_LIGHT" layoutX="32.0" layoutY="85.0" text="50" />
+      <Label blendMode="HARD_LIGHT" layoutX="33.0" layoutY="133.0" text="25" />
+      <ImageView fitHeight="49.0" fitWidth="57.0" layoutX="4.0" layoutY="1.0">
+         <image>
+            <Image url="@sun.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="sunvalue" alignment="CENTER" blendMode="HARD_LIGHT" layoutX="13.0" layoutY="16.0" prefHeight="20.0" prefWidth="39.0" text="0" textFill="#1c0707" />
+      <ImageView fx:id="zombie1" fitHeight="120.0" fitWidth="105.0" layoutX="558.0" layoutY="15.0">
+         <image>
+            <Image url="@conezombie.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="zombie2" fitHeight="120.0" fitWidth="105.0" layoutX="577.0" layoutY="58.0">
+         <image>
+            <Image url="@conezombie.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="sun1" fitHeight="41.0" fitWidth="49.0" layoutX="230.0" layoutY="-15.0" onMouseClicked="#addsun" opacity="0.0">
+         <image>
+            <Image url="@sun.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="sun2" fitHeight="41.0" fitWidth="49.0" layoutX="176.0" layoutY="-35.0" onMouseClicked="#addsun" opacity="0.0">
+         <image>
+            <Image url="@sun.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="sun3" fitHeight="41.0" fitWidth="49.0" layoutX="307.0" layoutY="-55.0" onMouseClicked="#addsun" opacity="0.0">
+         <image>
+            <Image url="@sun.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

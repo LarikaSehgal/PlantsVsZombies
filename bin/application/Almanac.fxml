@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="anch" prefHeight="300" prefWidth="500" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.AlmanacController">
+   <children>
+      <ImageView fitHeight="306.0" fitWidth="510.0" layoutX="-2.0" layoutY="-1.0">
+         <image>
+            <Image url="@almanac%20background.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="viewzombies" blendMode="DARKEN" layoutX="187.0" layoutY="67.0" mnemonicParsing="false" onAction="#viewzombies" prefHeight="33.0" prefWidth="125.0" />
+      <Button fx:id="viewplants" blendMode="DARKEN" layoutX="187.0" layoutY="20.0" mnemonicParsing="false" onAction="#viewplants" prefHeight="33.0" prefWidth="125.0" />
+      <Button fx:id="algoback" blendMode="DARKEN" layoutX="187.0" layoutY="120.0" mnemonicParsing="false" onAction="#gobacktomainmenu" prefHeight="33.0" prefWidth="125.0" />
+   </children>
+</AnchorPane>
