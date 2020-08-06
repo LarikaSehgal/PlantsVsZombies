@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="anch" prefHeight="300" prefWidth="500" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.mainController">
+   <children>
+      <ImageView fitHeight="300.0" fitWidth="500.0">
+         <image>
+            <Image url="@Menupage.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="startgame" layoutX="201.0" layoutY="61.0" mnemonicParsing="false" onAction="#startgame" prefHeight="27.0" prefWidth="233.0" text="Start Game">
+         <font>
+            <Font name="Comic Sans MS" size="13.0" />
+         </font>
+      </Button>
+      <Button layoutX="201.0" layoutY="99.0" mnemonicParsing="false" onAction="#startgame" prefHeight="27.0" prefWidth="233.0" text="Load Game">
+         <font>
+            <Font name="Comic Sans MS" size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="almanac" layoutX="201.0" layoutY="176.0" mnemonicParsing="false" onAction="#almanac" prefHeight="27.0" prefWidth="233.0" text="Almanac">
+         <font>
+            <Font name="Comic Sans MS" size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="instructions" layoutX="201.0" layoutY="213.0" mnemonicParsing="false" onAction="#instructions" prefHeight="27.0" prefWidth="233.0" text="Instructions">
+         <font>
+            <Font name="Comic Sans MS" size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="exit" layoutX="48.0" layoutY="252.0" mnemonicParsing="false" onAction="#exit" text="EXIT" />
+      <Button layoutX="201.0" layoutY="136.0" mnemonicParsing="false" onAction="#createNewGame" prefHeight="27.0" prefWidth="233.0" text="Quick Play">
+         <font>
+            <Font name="Comic Sans MS" size="13.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="anch" prefHeight="300" prefWidth="500" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.InstructionsController">
+   <children>
+      <ImageView fitHeight="300.0" fitWidth="506.0">
+         <image>
+            <Image url="@instructions.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="instgoback" blendMode="DARKEN" layoutX="343.0" layoutY="54.0" mnemonicParsing="false" onAction="#gobacktomainmenu" prefHeight="45.0" prefWidth="121.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="anch" prefHeight="300" prefWidth="500" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.AlmanacController">
+   <children>
+      <ImageView fitHeight="339.0" fitWidth="510.0" layoutY="-28.0">
+         <image>
+            <Image url="@plants.png" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" layoutX="20.0" layoutY="272.0" prefHeight="31.0" prefWidth="470.0" text="PLANTS VS ZOMBIES">
+         <font>
+            <Font name="Noteworthy Bold" size="13.0" />
+         </font>
+      </Label>
+      <Button fx:id="plantgoback" blendMode="DARKEN" layoutX="7.0" layoutY="-3.0" mnemonicParsing="false" onAction="#gobacktoalmanac" prefHeight="31.0" prefWidth="47.0" />
+   </children>
+</AnchorPane>
